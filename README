@@ -1,0 +1,66 @@
+Warwick Summer School Application Portal
+
+A full-stack web application built using Flask to simulate a university summer school application system. The platform allows prospective students to browse courses and submit applications, while administrators can manage and review submissions through a secure dashboard.
+
+---
+
+Features
+
+Student Side
+- Browse available summer school courses
+- Submit application form
+- Receive confirmation page after submission
+
+Admin Side
+- Secure login system (session-based authentication)
+- View all submitted applications
+- Accept or reject applications
+- Delete applications
+- View individual application details
+
+---
+
+Tech Stack
+
+- Python
+- Flask
+- SQLite
+- HTML / CSS
+- Jinja2 Templating
+- Bootstrap (for responsive UI)
+
+---
+
+Project Structure
+
+app.py Main Flask application
+templates/ HTML templates (Jinja2)
+static/ CSS, images, assets
+requirements.txt Python dependencies
+
+---
+
+How to Run Locally
+
+1. Clone the repository
+git clone https://github.com/41y554/warwick-flask-app.git
+
+2. Navigate into the project
+cd warwick-flask-app
+
+3. Create virtual environment
+python -m venv .venv
+
+4. Activate virtual environment
+
+Windows:
+.venv\Scripts\activate
+
+Then open:
+
+http://127.0.0.1:5000/
+
+---
+Admin Login
+Username: admin
+Password: admin

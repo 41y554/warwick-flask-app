@@ -1,0 +1,150 @@
+<header class="container py-3">
+  <!--lofo, title, cta button-->
+  <div
+    class="d-flex flex-column flex-md-row align-items-center justify-content-between"
+  >
+    <div id="logo">
+      <a href="https://warwick.ac.uk"
+        ><img
+          src="https://d36jn9qou1tztq.cloudfront.net/static_war/render/id7/images/logo.svg.233060099087"
+          alt="University of Warwick homepage"
+          width="160"
+          height="80"
+          class="d-inline-block align-text-top"
+      /></a>
+    </div>
+
+    <h1 class="page-title mb-2 mb-md-0 text-center flex-grow-1">
+      <a
+        class="link-offset-2 link-underline link-underline-opacity-0"
+        href="home"
+      >
+        Summer School Information and Applications
+      </a>
+    </h1>
+
+    <a href="application" class="btn btn-primary">Apply Now!</a>
+  </div>
+
+  <!--navigation bar--->
+
+  <nav class="navbar navbar-expand-md navbar-light mt-3">
+    <!---hamburger button-->
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!---<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>--->
+        <!---note to self this 'active' indicates what page user is on-->
+        <li class="nav-item">
+          <a class="nav-link" href="/home">Homepage</a>
+        </li>
+        <!---nav item drop down-->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Business courses
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="business#flush-headingOne"
+                >Management</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="business#flush-headingTwo"
+                >Business Analytics</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="business#flush-headingThree"
+                >International Business</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Technology courses
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="technology#flush-headingOne"
+                >Machine Learning</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="technology#flush-headingTwo"
+                >Computer Science</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="technology#flush-headingThree"
+                >Artificial Intelligence</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Science courses
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="science#flush-headingOne"
+                >Biology</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="#flush-headingTwo">Chemistry</a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="#flush-headingThree">Physics</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <!---admin login button-->
+
+      <a href="{{ url_for('login') }}" class="btn btn-outline-success btn-sm"
+        >Admin Login</a
+      >
+    </div>
+  </nav>
+</header>
